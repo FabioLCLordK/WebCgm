@@ -7,13 +7,17 @@
     <body>
         <h1> Benvenuto nella pagina!</h1>
         <h2> Comunque sia, in ogni caso...</h2>
-        <h1> 800A </h1> 
+        <h1> 800A, ma ora Iscriviti </h1> 
         <!-- Le FORM SONO I MODILI IN CUI INSERIRE DEI DATI -->
-        <form action="/Blog/user" method="GET">
+        <!-- Se uso Post è criptato, se uso GET no -->
+        <form action="/blog/user" method="POST">
             <!-- I placeHolder sono modi per inserire i nomi, 
             se usi invece la  value dai già un valore precompilato -->
-            <input type="text" name="firstname" value="Nome" placeholder="Nome"/> 
-            <input type="number" name="age" placeholder="Età" />
+            <input type="text" name="firstname" placeholder="Nome"/> 
+            <input type="text" name="lastname" placeholder="Cognome" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="password" placeholder="Password" />
+            
             <input type="submit" value="Iscriviti" />
         </form>
     </body>
